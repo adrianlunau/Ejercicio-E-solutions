@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1>8 - Encuesta</h1>
+        <h1>Formulario</h1>
+        <h2>Ejercicio 8: E-Solutions <i class="fa-solid fa-code"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h2>
     </header>
     <main>
         <details>
@@ -33,10 +35,14 @@
                         <input type="text" id="lastname" name="user_lastname" class="input">
                     </div>
                     <div class="item">
-                        <label for="address">Direccion:</label>
+                        <label for="address">Dirección:</label>
                         <input type="text" id="address" name="user_address" class="input">
                     </div class="item">
-                    <div class="radio_buttons">
+                    <div class="item">
+                        <label for="city">Ciudad:</label>
+                        <input type="text" id="city" name="user_city" class="input">
+                    </div class="item">
+                    <div class="radio_buttons item">
                         <label for="sex">Sexo:</label>
                         <div>
                             <input type="radio" id="male" name="sex" class="inline">
@@ -51,6 +57,14 @@
                     <div class="item">
                         <label for="birthday">Fecha de nacimiento:</label>
                         <input type="date" id="birthday" name="user_birthday" min="1900-04-01" max="2017-04-30" class="input">
+                    </div>
+
+                    <div class="item">
+                        <label for="house">Vivienda: </label>
+                        <select name="select" id="house">
+                            <option value="value1">Casa</option>
+                            <option value="value2" selected>Departamento</option>
+                          </select>
                     </div>
 
                     <div class="item">
