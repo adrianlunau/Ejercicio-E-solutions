@@ -20,7 +20,6 @@ summary {
     background-color: rgb(230, 230, 230);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    border: 1px solid blue;
     width: 70%;
     margin: 0 auto;
     padding: 0.5em;
@@ -43,7 +42,6 @@ form {
     flex-direction: column;
     background-color: lightblue;
     width: 70%;
-    min-width: 36em;
     margin: 0 auto;
     padding: 0.5em;
     border-radius: 0 0 10px 10px;
@@ -61,6 +59,7 @@ button {
 
 .container-sup {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 2em;
@@ -109,3 +108,5 @@ input::target-text {
 footer p {
     text-align: center;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 1018px) {}
