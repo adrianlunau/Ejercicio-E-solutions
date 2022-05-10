@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+}
+
+label {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+summary {
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: 1px solid blue;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 10px 5px 0 0;
+    color: rgb(73, 73, 73);
+}
+
+details p {
+    background-color: rgb(247, 247, 247);
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5em;
+    color: rgb(73, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 70%;
+    min-width: 36em;
+    margin: 0 auto;
+    padding: 0.5em;
+    border-radius: 0 0 10px 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+button {
+    width: 10em
+}
+
+.container-sup {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2em;
+    padding: 1em;
+}
+
+.input {
+    border: none;
+    border-radius: 5px;
+    min-width: 15em;
+    height: 25px;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+    width: 32em;
+    height: 25px;
+}
+
+input::target-text {
+    border: 1px solid greenyellow;
+}
+
+.inline {
+    display: inline;
+}
+
+.item {
+    margin: 0.5em 0 0;
+}
+
+.preguntas {
+    display: flex;
+    flex-direction: column;
+}
+
+.preguntas textarea {
+    flex: auto;
+}
+
+.preguntas label {
+    margin: 0.5em 0 0;
+}
+
+footer p {
+    text-align: center;
+}

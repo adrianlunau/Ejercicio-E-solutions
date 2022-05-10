@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>8 - Encuesta</h1>
+    </header>
+    <main>
+        <details>
+            <summary>Consigna</summary>
+            <p>Cree una página con dos preguntas propias. Su encuesta debe primero recopilar los datos personales de los participantes (nombre, dirección, sexo, fecha de nacimiento, una contraseña, etc.) seguida de cuatro preguntas para responder. Se valora
+                la variedad de elementos usados en la página. Use CSS para mejorar el aspecto de su formulario.</p>
+        </details>
+        <form action="/my-handling-form-page" method="post">
+            <div class="container-sup">
+
+
+                <div class="info_personal">
+                    <div class="item">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="user_name" class="input">
+                    </div>
+                    <div class="item">
+                        <label for="lastname">Apellido:</label>
+                        <input type="text" id="lastname" name="user_lastname" class="input">
+                    </div>
+                    <div class="item">
+                        <label for="address">Direccion:</label>
+                        <input type="text" id="address" name="user_address" class="input">
+                    </div class="item">
+                    <div class="radio_buttons">
+                        <label for="sex">Sexo:</label>
+                        <div>
+                            <input type="radio" id="male" name="sex" class="inline">
+                            <label class="inline" for="male">Hombre</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="female" name="sex" class="inline">
+                            <label for="female" class="inline">Mujer</label>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <label for="birthday">Fecha de nacimiento:</label>
+                        <input type="date" id="birthday" name="user_birthday" min="1900-04-01" max="2017-04-30" class="input">
+                    </div>
+
+                    <div class="item">
+                        <label for="age">Edad:</label>
+                        <input type="number" id="age" name="user_age" class="input">
+                    </div>
+                    <div class="item">
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail" class="input">
+                    </div>
+                    <div class="item">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="user_password" class="input">
+                    </div>
+                </div>
+                <div class="preguntas">
+                    <label for="msg-1" class="mt-0">¿Con qué frecuencia haces ejercicio?</label>
+                    <textarea id="msg-1" name="user_message1"></textarea>
+
+                    <label for="msg-2">¿Cuál es la principal razón por la que haces ejercicio?</label>
+                    <textarea id="msg-2" name="user_message2"></textarea>
+
+                    <label for="msg-3">¿Qué tipo de deporte o actividad física te gusta practicar?</label>
+                    <textarea id="msg-3" name="user_message3"></textarea>
+
+                    <label for="msg-4">¿En qué lugar haces ejercicio?</label>
+                    <textarea id="msg-4" name="user_message4"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <p>Adrián Luna Udovicich</p>
+            </li>
+            <li>
+                <p>adrianelunau@gmail.com</p>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
